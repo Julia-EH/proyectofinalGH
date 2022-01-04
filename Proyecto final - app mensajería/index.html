@@ -11,23 +11,23 @@
 
     <div id="canales">
         <h1>Canales</h1>
-        <div class="nuevo-canal">
-            <h3>Crear canal</h3>
-            <input type="text" id="nuevo-canal-barra" placeholder="Nuevo canal">
-            <input type="submit" value="Create" id="nuevo-canal-boton" onclick="nuevoCanal()">
-        </div>
         <ul id="listacanales">
             <li><a href="#">Canal uno</a></li>
             <li><a href="#">Canal dos</a></li>
-           </ul>
+        </ul>
+        <div class="nuevo-canal">
+            <h3>Crear canal:</h3>
+            <input type="text" id="nuevo-canal-barra" placeholder="Nuevo canal">
+            <input type="submit" value="añadir" id="nuevo-canal-boton" onclick="nuevoCanal()">
+        </div>
     </div>
 
-    <div id="principal">  
+    <div id="principal">
         <div id="cabecera">    
             <div id="titulocanal">
                 <h1>Título del canal</h1>
             </div>
-            <div class="search"> 
+            <div id="busqueda"> 
                 <div class="search-bar">
                     <input type="search" class="search" placeholder="Buscar">
                     <input type="submit">
@@ -43,6 +43,7 @@
             <div id="mensaje-nuevo">
                 <div class="text">
                     <input type="text" class="message" placeholder="Escribe tu mensaje">
+                    <input type="submit" value="enviar" id="enviar-mensaje" onclick="nuevoMensaje()">
                 </div>
             </div>
         </div>
