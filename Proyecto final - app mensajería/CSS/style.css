@@ -1,0 +1,89 @@
+/* GENERAL*/
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    background: greenyellow;
+} 
+    
+/*APARTADOS*/ 
+#canales {
+    position: fixed;
+    width: 15%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    color:darkslategrey; 
+    margin: 10px;
+    background-color: greenyellow;
+}
+#principal {    
+    position: fixed;
+    width: 85%;
+    height: 100%;
+    left: 15%;
+    top: 0px;
+    color:green; 
+    background-color: whitesmoke;
+}
+    #cabecera {
+        position: fixed;
+        left: 15%;
+        width: 85%;
+        height: 15%;
+        top: 0px;
+        margin: 10px;
+        border-width: thin;
+        border-color: darkslategrey;
+        border-style: solid;
+    }
+    #mensajes {
+        position: fixed;
+        left: 15%;
+        width: 85%;
+        height: 70%;
+        top: 15%;
+        margin: 10px;
+    }
+    #pie {
+        position: fixed;
+        left: 15%;
+        width: 85%;
+        height: 15%;
+        top: 85%;
+        margin: 10px;
+    }
+
+/* ESPECÍFICOS por tipo y orden alfabético */
+
+#titulocanal {
+    position: relative;
+    width: 80%;
+    height: 100%;
+    text-align: center;
+}
+
+
+/* Todo esto del search, entero, no lo consigo  apañar... */
+
+div.search {  
+    position: relative;
+    width: 20%;
+    float: right;
+}
+
+
+div.search-bar {  
+    position: relative;
+    width: 60%;
+    
+}
+
+div.search-button {  
+    position: relative;
+    width: 40%;
+    
+}
+

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <title>App mensajería - Proyecto final GHA</title>
+</head>
+<body><div>
+
+    <div id="canales">
+        <h1>Canales</h1>
+        <div class="nuevo-canal">
+            <h3>Crear canal</h3>
+            <input type="text" id="nuevo-canal-barra" placeholder="Nuevo canal">
+            <input type="submit" value="Create" id="nuevo-canal-boton" onclick="nuevoCanal()">
+        </div>
+        <ul id="listacanales">
+            <li><a href="#">Canal uno</a></li>
+            <li><a href="#">Canal dos</a></li>
+           </ul>
+    </div>
+
+    <div id="principal">  
+        <div id="cabecera">    
+            <div id="titulocanal">
+                <h1>Título del canal</h1>
+            </div>
+            <div class="search"> 
+                <div class="search-bar">
+                    <input type="search" class="search" placeholder="Buscar">
+                    <input type="submit">
+                </div>
+                <div class="search-button">
+                </div>
+            </div>
+        </div>
+        <div id="mensajes">    
+            <p> Mensajitos </p>
+        </div>
+        <div id="pie">    
+            <div id="mensaje-nuevo">
+                <div class="text">
+                    <input type="text" class="message" placeholder="Escribe tu mensaje">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
