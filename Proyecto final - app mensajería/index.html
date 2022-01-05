@@ -10,6 +10,8 @@
 <body><div>
 
     <div id="zona-canales">
+        <h2>USER</h2> /* Voy a intentar meter un popup a ver */
+        <input type="submit" value="Clic para introducir tu nombre" id="nombreUser" onclick="nombreUser()">
         <h1>Canales</h1>
         <ul id="lista-canales">
             <li><a href="#">Canal uno</a></li>
@@ -37,14 +39,40 @@
             </div>
         </div>
         <div id="zona-chat">    
-            <div class="caja-mensajes">
-            <p> <strong>Luisa</strong>: <q class: mensaje>Mensajito 1</q></p>
+            <div id="caja-mensajes">
+            <p> <strong>Luisa</strong>: <q class: mensaje>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam scelerisque diam nec pulvinar sodales. Aliquam dapibus, purus sed tempus sagittis, est elit consequat velit, ac sollicitudin enim leo id ex.</q></p>
+            </div>
+            <div id="caja-mensajes">
+            <p> <strong>Pepín</strong>: <q class: mensaje> Quisque ut fermentum turpis, nec fringilla enim. Nunc blandit ante ut odio pretium consequat. Morbi id tellus in massa feugiat lacinia.</q></p>
+            </div>
+            <div id="caja-mensajes">
+            <p> <strong>Luisa</strong>: <q class: mensaje>Maecenas neque dui, aliquam viverra ligula sed, porta sollicitudin odio.</q></p>
+            </div>
+            <div id="caja-mensajes">
+            <p> <strong>Eduarda</strong>: <q class: mensaje>Aliquam nec dolor sit amet eros varius sagittis vitae quis sem. Praesent ultrices, nisl et pulvinar dapibus, dui mauris efficitur odio, vitae finibus mauris sapien at erat. Etiam dignissim vel mi et hendrerit. </q></p>
+            </div>
+            <div id="caja-mensajes">
+            <p> <strong>Felipe</strong>: <q class: mensaje>Fusce eu felis eget enim porttitor aliquet. Integer non risus ac velit condimentum cursus sit amet id elit. Sed aliquet lectus id libero imperdiet luctus. Sed auctor ligula neque, eu maximus mi euismod sit amet. Fusce convallis nunc neque. Nunc sed posuere ante. </q></p>
+            </div>
+            <div id="caja-mensajes">
+            <p> <strong>Daniela</strong>: <q class: mensaje>Mauris aliquet, mauris eu bibendum porta, lorem ante aliquet sapien, convallis aliquam leo ipsum a quam.</q></p>
+            </div>
+            <div id="caja-mensajes">
+            <p> <strong>Daniela</strong>: <q class: mensaje>Etiam euismod nibh sed volutpat tincidunt. In hac habitasse platea dictumst. </q></p>
+            </div>
+            <div id="caja-mensajes">
+            <p> <strong>Luisa</strong>: <q class: mensaje>Vivamus euismod facilisis tempus. Donec rhoncus risus eget maximus hendrerit. Nullam tempus ac neque quis imperdiet. Morbi fermentum egestas quam, eget lobortis eros ultrices non. </q></p>
+            </div>
+            <div id="caja-mensajes">
+            <p> <strong>Pepín</strong>: <q class: mensaje>Suspendisse sodales convallis iaculis. Sed lobortis nisl ac lorem iaculis, sit amet hendrerit odio interdum. Donec egestas, magna a mollis semper, nunc mauris condimentum leo, non feugiat orci nisl sed metus. Aliquam justo mauris, porta vitae commodo et, pharetra viverra est. </q></p>
+            </div>
+            <div id="caja-mensajes">
+            <p> <strong>Felipe</strong>: <q class: mensaje>Mauris sollicitudin est non neque ornare, a rhoncus justo sagittis. </q></p>
             </div>
         </div>
         <div id="zona-pie">    
                 <div class="text">
                     <input type="text" id="nuevo-mensaje-barra" placeholder="Escribe tu mensaje">
-                    <input type="text" id="nombre-user-barra" placeholder="Tu nombre">
                     <input type="submit" value="enviar" id="enviar-mensaje" onclick="nuevoMensaje()">
             </div>
         </div>
