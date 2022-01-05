@@ -9,25 +9,25 @@
 </head>
 <body><div>
 
-    <div id="canales">
+    <div id="zona-canales">
         <h1>Canales</h1>
-        <div class="nuevo-canal">
-            <h3>Crear canal</h3>
-            <input type="text" id="nuevo-canal-barra" placeholder="Nuevo canal">
-            <input type="submit" value="Create" id="nuevo-canal-boton" onclick="nuevoCanal()">
-        </div>
-        <ul id="listacanales">
+        <ul id="lista-canales">
             <li><a href="#">Canal uno</a></li>
             <li><a href="#">Canal dos</a></li>
-           </ul>
+        </ul>
+        <div class="zona-nuevo-canal">
+            <h3>Crear canal:</h3>
+            <input type="text" id="nuevo-canal-barra" placeholder="Nuevo canal">
+            <input type="submit" value="añadir" id="nuevo-canal-boton" onclick="nuevoCanal()">
+        </div>
     </div>
 
-    <div id="principal">  
-        <div id="cabecera">    
+    <div id="zona-principal">
+        <div id="zona-cabecera">    
             <div id="titulocanal">
                 <h1>Título del canal</h1>
             </div>
-            <div class="search"> 
+            <div id="zona-busqueda"> 
                 <div class="search-bar">
                     <input type="search" class="search" placeholder="Buscar">
                     <input type="submit">
@@ -36,14 +36,16 @@
                 </div>
             </div>
         </div>
-        <div id="mensajes">    
-            <p> Mensajitos </p>
+        <div id="zona-chat">    
+            <div class="caja-mensajes">
+            <p> <strong>Luisa</strong>: <q class: mensaje>Mensajito 1</q></p>
+            </div>
         </div>
-        <div id="pie">    
-            <div id="mensaje-nuevo">
+        <div id="zona-pie">    
                 <div class="text">
-                    <input type="text" class="message" placeholder="Escribe tu mensaje">
-                </div>
+                    <input type="text" id="nuevo-mensaje-barra" placeholder="Escribe tu mensaje">
+                    <input type="text" id="nombre-user-barra" placeholder="Tu nombre">
+                    <input type="submit" value="enviar" id="enviar-mensaje" onclick="nuevoMensaje()">
             </div>
         </div>
     </div>

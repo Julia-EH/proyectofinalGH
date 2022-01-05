@@ -1,4 +1,3 @@
-/* GENERAL*/
 body {
     width: 100%;
     height: 100%;
@@ -8,8 +7,7 @@ body {
     background: greenyellow;
 } 
     
-/*APARTADOS*/ 
-#canales {
+#zona-canales {
     position: fixed;
     width: 15%;
     height: 100%;
@@ -19,7 +17,7 @@ body {
     margin: 10px;
     background-color: greenyellow;
 }
-#principal {    
+#zona-principal {    
     position: fixed;
     width: 85%;
     height: 100%;
@@ -28,10 +26,8 @@ body {
     color:green; 
     background-color: whitesmoke;
 }
-    #cabecera {
-        position: fixed;
-        left: 15%;
-        width: 85%;
+    #zona-cabecera {
+        position: relative;
         height: 15%;
         top: 0px;
         margin: 10px;
@@ -39,51 +35,43 @@ body {
         border-color: darkslategrey;
         border-style: solid;
     }
-    #mensajes {
-        position: fixed;
-        left: 15%;
-        width: 85%;
-        height: 70%;
-        top: 15%;
+
+
+        #titulocanal {
+            position: relative;
+            width: 80%;
+            text-align: center;
+        }
+    
+/* LO DEL SEARCH; parece que de momento funciona, jeje, ¡yujuuuu! */
+                #zona-busqueda {  
+                    position: relative;
+                    width: 20%;
+                    float: right;
+                }
+
+    #zona-chat {
+        position: relative;
+        height: 60%;
+        margin: 10px;
+        overflow-y: scroll;
+        display: block; /* quiero probar a ver si de esta forma funcionan las funciones... y he puesto p y div a ver qué me convence más, que no lo hacen igual*/
+    }
+    #zona-pie {
+        position: relative;
+        height: 10%;
         margin: 10px;
     }
-    #pie {
-        position: fixed;
-        left: 15%;
-        width: 85%;
-        height: 15%;
-        top: 85%;
-        margin: 10px;
+    .caja-mensajes {  
+        box-sizing: content-box;
+        min-height: 10px;
+        min-width: 10px;
+        border:3px solid green;
+        border-radius:22px; 
     }
-
-/* ESPECÍFICOS por tipo y orden alfabético */
-
-#titulocanal {
-    position: relative;
-    width: 80%;
-    height: 100%;
-    text-align: center;
-}
-
-
-/* Todo esto del search, entero, no lo consigo  apañar... */
-
-div.search {  
-    position: relative;
-    width: 20%;
-    float: right;
-}
-
-
-div.search-bar {  
-    position: relative;
-    width: 60%;
-    
-}
-
-div.search-button {  
-    position: relative;
-    width: 40%;
-    
-}
-
+        #nuevo-mensaje-barra {
+            width: 80%;
+        }
+        #nombre-user-barra {
+            width: 10%;
+        }
