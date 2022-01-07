@@ -1,7 +1,7 @@
 function nuevoCanal() {
-    var canalLoc = document.getElementById("nuevo-canal-barra").value;
-    var canalNuevo = document.createTextNode(canalLoc);
-    var listaLoc = document.getElementById("lista-canales");
+    var canalOrigen = document.getElementById("nuevo-canal-barra").value;
+    var canalNuevo = document.createTextNode(canalOrigen);
+    var listaOrigen = document.getElementById("lista-canales");
     var listaNuevo = document.createElement("li");
     var aNuevo = document.createElement("a");
     var attr = document.createAttribute("href");
@@ -10,7 +10,7 @@ function nuevoCanal() {
 
     aNuevo.setAttributeNode(attr);
 
-    listaLoc.appendChild(listaNuevo);
+    listaOrigen.appendChild(listaNuevo);
     listaNuevo.appendChild(aNuevo);
     aNuevo.appendChild(canalNuevo);
 
@@ -18,36 +18,38 @@ function nuevoCanal() {
 
 }
 
-function nombreUser() {
-    var userLoc = document.getElementById("nombre-user-barra").value;
-    var userNuevo = document.createTextNode(userLoc);
-    var listaLoc = document.getElementById("zona-user"); /* no existe aún zona-user (de hecho, no "getElement": esto no será una list, tiene que sustituir (aunque lo tengo que crear primero) y entonces lo de abajo creo que tampoco me hace falta si encuentro el "sustituir"*/
-    var listaNuevo = document.createElement("div");
-    var pNuevo = document.createElement("p");
-    var uNuevo = document.createElement("strong");
-    
-/* Revisar qué me vale de aquí; y del document, a ver cómo llamo a la "barra" -imagino que igual- */
-    listaLoc.appendChild(listaNuevo, pNuevo);
-    listaNuevo.appendChild(qNode);
-    pNuevo.appendChild(uNuevo);
-    uNuevo.appendChild(userNuevo);
+function nuevoMensaje() {
+    var fechaOrigen = new Date();
+    var yo = "yo: ";
+    var mensajeOrigen = document.getElementById("nuevo-mensaje-barra").value;
+    var listOrigen = document.getElementById("zona-chat");
 
-    document.getElementById("nombre-user-barra").value = "";
+    var listNuevo = document.createElement("div");
+    var mensajeNuevo = document.createElement("div");
+    var mensajeContenido = document.createTextNode(mensajeOrigen);
+    var fechaNuevo = document.createElement("div");
+    var fechaContenido = document.createTextNode(fechaOrigen);
+    var userNuevo = document.createElement("div");
+    var userContenido = document.createTextNode(yo);
 
+    listOrigen.appendChild(listNuevo);
+    listNuevo.appendChild(userNuevo);
+    listNuevo.appendChild(mensajeNuevo);
+    listNuevo.appendChild(fechaNuevo);
+    userNuevo.appendChild(userContenido);
+    mensajeNuevo.appendChild(mensajeContenido);
+    fechaNuevo.appendChild(fechaContenido);
+
+    listNuevo.classList.add("caja-mensajes");
+    userNuevo.classList.add("user");
+    mensajeNuevo.classList.add("mens");
+    fechaNuevo.classList.add("fech");
+ 
+    document.getElementById("nuevo-mensaje-barra").value = "";
 }
 
-function nuevoMensaje() {
-    var mensajeLoc = document.getElementById("nuevo-mensaje-barra").value;
-    var mensajeNuevo = document.createTextNode(mensajeLoc);
-    var listaLoc = document.getElementById("zona-chat");
-    var listaNuevo = document.createElement("div");
-    var pNuevo = document.createElement("p");
-    var qNuevo = document.createElement("q");
-
-    listaLoc.appendChild(listaNuevo);
-    listaNuevo.appendChild(pNuevo);
-    pNuevo.appendChild(qNuevo);
-    qNuevo.appendChild(mensajeNuevo);
-
-    document.getElementById("nuevo-mensaje-barra").value = "";
+function buscar() {
+    var busqueda = document.getElementById("criterio").value;
+    
+    console.log (busqueda);
 }

@@ -61,13 +61,23 @@ body {
         height: 10%;
         margin: 10px;
     }
-    #caja-mensajes {  
+    .caja-mensajes {  
         margin: 10px 5px;
         border:3px solid green;
         border-radius:22px; 
-        padding: 0px 5px;
+        padding: 2px 10px;
         background-color: rgba(172, 255, 47, 0.11);
         text-indent: 1em;
+    }
+    .user {
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .mens {
+        font-style: italic;
+    }
+    .fech {
+        text-align: center;
     }
         #nuevo-mensaje-barra {
             width: 80%;
